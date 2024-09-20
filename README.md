@@ -1,27 +1,65 @@
-## Code-Clone-Detection-Using-Metrics
-1. Code Clones: In a software system, similar or identical fragments of code are known as code clones. Instead of implementing a new code from scratch, most of the developers prefer copy–paste programming in which they use existing code fragments.
-2. But a single bug in that fragment of code can magnify by affecting all of its code clones.
-3. So made an extension, to identify code clones, for a program in the development phase via the use of a Visual Studio code extension.
+# vs-code-extension-trial README
 
-## Idea and Motivation
-1. Fortunately, many techniques for the detection of code clones have been proposed. 
-2. They show that lightweight text-based techniques can find clones with high accuracy and confidence, but detected clones often do not correspond to appropriate syntactic units .
-3. Parser based syntactic (AST-based) techniques, find syntactically meaningful clones but tend to be more heavyweight, requiring a full parser and sub-tree comparison method.
-4. An Incremental detection technique detects clones in less time in each revision separately. 
-5. Moreover, it only detects similar clones of type 1. The complexity of all the methods is high and this can be reduced with the computed metrics values.
-6. Needed a lightweight and more accurate method to detect clones, for which we referred to the research paper mentioned just below.
-7. Detection of Type-1 and Type-2 Code Clones Using Textual Analysis and Metrics:-
-https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5460547&tag=1
-8. Based on the above paper, came up with an idea of simple textual analysis and a metric-based.
+This is the README for your extension "vs-code-extension-trial". After writing up a brief description, we recommend including the following sections.
 
+## Features
 
-## User guide and Features
-1. Clone this repository to local folder.
-2. Open `/vscode-extension-trial` folder in VSCode.
-3. Install `Prettier` extension using extension store of VSCode.
-3. Open `extension.js` file in the `/vscode-extension-trial` and press F5.
-4. An extension development window will be opened.
-5. Open the file in which the code clones need to be checked.
-6. Now open the command pallet by pressing `Crtl + Shift + P` and type ‘Format Document with Prettier’.
-7. Now in the command pallet, search for the command `Detect Clones` and press Enter.
-8. The clones present in the file and their matching percentage will be shown in the debug console.
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+
+For example if there is an image subfolder under your extension project workspace:
+
+\!\[feature X\]\(images/feature-x.png\)
+
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+
+## Requirements
+
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+
+## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
+For example:
+
+This extension contributes the following settings:
+
+* `myExtension.enable`: enable/disable this extension
+* `myExtension.thing`: set to `blah` to do something
+
+## Known Issues
+
+Calling out known issues can help limit users opening duplicate issues against your extension.
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 1.0.0
+
+Initial release of ...
+
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+-----------------------------------------------------------------------------------------------------------
+
+## Working with Markdown
+
+**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+
+### For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
